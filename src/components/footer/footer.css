@@ -1,0 +1,116 @@
+/* Footer styling */
+.contact-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact-footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    flex: 1;
+    max-width: 300px;
+    margin: 10px;
+}
+
+.contact-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #e63946;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.contact-info i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: #e63946;
+}
+
+.contact-info span {
+    font-size: 1rem;
+}
+
+.contact-social {
+    flex: 1;
+    max-width: 300px;
+    margin: 10px;
+}
+
+.contact-social h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #e63946;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #e63946;
+}
+
+.contact-hours {
+    flex: 1;
+    max-width: 300px;
+    margin: 10px;
+}
+
+.contact-hours h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #e63946;
+}
+
+.contact-hours p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .contact-footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-info,
+    .contact-social,
+    .contact-hours {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+}

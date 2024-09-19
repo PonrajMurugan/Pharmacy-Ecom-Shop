@@ -1,0 +1,98 @@
+.top-offers-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .top-offers-header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    position: relative;
+    margin-bottom: 40px;
+  }
+  
+  .top-offers-header h1::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 5px;
+    background-color: #ff6347;
+    margin: 10px auto 0;
+    border-radius: 5px;
+  }
+  
+  .offers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+  }
+  
+  .offer-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+  }
+  
+  .offer-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  .offer-image img {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    height: 200px;
+    object-fit: contain;
+    padding: 10px;
+  }
+  
+  .offer-details {
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .offer-product {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .offer-brand {
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  .offer-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff6347;
+  }
+  
+  .offer-saves {
+    font-size: 1rem;
+    color: #28a745;
+  }
+  
+  @media (max-width: 768px) {
+    .offers-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .offers-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  

@@ -1,0 +1,120 @@
+.pharmacy-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    /* background-color: #f5f5f5; */
+    
+    margin-top: 50px;
+}
+
+.pharmacy-product {
+    /* background-color: #fff; */
+    background-color: #ffffff;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 200 200'%3E%3Cpolygon fill='%23DCEFFA' points='100 0 0 100 100 100 100 200 200 100 200 0'/%3E%3C/svg%3E");
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+}
+
+.pharmacy-product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.pharmacy-image {
+    width: 50%;
+    /* height: 0px; */
+    object-fit: cover;
+    border-bottom: 2px solid #e0e0e0;
+    transition: transform 0.3s ease;
+}
+
+.pharmacy-product:hover .pharmacy-image {
+    transform: scale(1.05); 
+}
+
+.pharmacy-details {
+    padding: 15px 10px;
+}
+
+.pharmacy-product-name {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+}
+
+.pharmacy-product:hover .pharmacy-product-name {
+    color: #007bff; 
+}
+
+.pharmacy-brand {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.pharmacy-price {
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.pharmacy-product * {
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .pharmacy-container {
+        grid-template-columns: 1fr; 
+    }
+}
+
+
+.pharmacy-title {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    position: relative;
+    margin-bottom: 40px;
+    font-weight: bold;
+    animation: fadeInDown 1s ease-out;
+    margin-top: 50px;
+}
+
+.pharmacy-title::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: #007bff; 
+    margin: 10px auto;
+    animation: titleUnderline 1s ease-out;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes titleUnderline {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 80px;
+    }
+}
+

@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .medplus-container {
+    padding: 20px;
+    /* background-color: #f5f7fa; */
+  }
+  
+  .medplus-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .header-title {
+    font-size: 2.5rem;
+    color: #0d6efd;
+    font-weight: bold;
+  }
+  
+  .medplus-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .medplus-card {
+    /* background-color: #fff; */
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 200 200'%3E%3Cpolygon fill='%23DCEFFA' points='100 0 0 100 100 100 100 200 200 100 200 0'/%3E%3C/svg%3E");
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .medplus-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  }
+  
+  .medplus-image {
+    width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .medplus-card:hover .medplus-image {
+    transform: scale(1.1);
+  }
+  
+  .medplus-product-title {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .medplus-product-brand {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .medplus-product-price {
+    font-size: 1.5rem;
+    color: #28a745;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .medplus-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .medplus-btn:hover {
+    background-color: #c82333;
+  }
+  
+  @media (max-width: 992px) {
+    .medplus-grid {
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+  
+    .header-title {
+      font-size: 2rem;
+    }
+  
+    .medplus-btn {
+      padding: 8px 15px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .medplus-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .header-title {
+      font-size: 1.8rem;
+    }
+  
+    .medplus-image {
+      width: 90px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .medplus-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    .header-title {
+      font-size: 1.5rem;
+    }
+  
+    .medplus-card {
+      padding: 15px;
+    }
+  
+    .medplus-btn {
+      padding: 6px 12px;
+      font-size: 0.8rem;
+    }
+  }
+  

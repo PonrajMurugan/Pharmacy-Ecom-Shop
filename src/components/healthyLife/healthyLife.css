@@ -1,0 +1,102 @@
+.healthy-life-container {
+    padding: 60px 20px;
+    background-color: #f2f5f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin: 50px 0px;
+}
+.healthy-life-content {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    max-width: 1200px;
+    align-items: center;
+}
+
+.healthy-life-text {
+    flex: 1;
+}
+
+.healthy-life-text h6 {
+    font-size: 1.2rem;
+    color: #007bff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.healthy-life-text h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color:orange;
+    margin-bottom: 20px;
+}
+
+.highlight-text {
+    font-size: 1.2rem;
+    color: #e63946;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.healthy-life-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.healthy-life-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.healthy-life-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+   
+}
+
+.healthy-life-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .healthy-life-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .healthy-life-text h3 {
+        font-size: 2rem;
+    }
+
+    .healthy-life-text h6 {
+        font-size: 1rem;
+    }
+
+    .healthy-life-text p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .healthy-life-text h3 {
+        font-size: 1.5rem;
+    }
+
+    .healthy-life-text h6 {
+        font-size: 0.9rem;
+    }
+
+    .healthy-life-text p {
+        font-size: 0.9rem;
+    }
+}
